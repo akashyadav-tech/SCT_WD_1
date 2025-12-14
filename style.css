@@ -1,0 +1,256 @@
+/* ===== GOOGLE FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0d0d0d;
+    color: #fff;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    transition: 0.4s ease;
+    z-index: 1000;
+}
+
+nav.scrolled {
+    background: #111;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.brand {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    transition: 0.3s;
+    padding-bottom: 5px;
+}
+
+.menu li a:hover,
+.menu li a.active {
+    border-bottom: 2px solid #00d4ff;
+}
+
+/* ===== BURGER MENU (Mobile) ===== */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+.burger div {
+    width: 28px;
+    height: 3px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+/* ===== HERO SECTION ===== */
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: auto;
+    opacity: 0.8;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    font-size: 18px;
+    background: #00d4ff;
+    color: #000;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: #00a2c7;
+}
+
+/* ===== SECTION BASE STYLE ===== */
+section {
+    padding: 90px 60px;
+    text-align: center;
+}
+
+.title {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.sub {
+    font-size: 18px;
+    opacity: 0.7;
+    margin-bottom: 40px;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    max-width: 500px;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+.about-pic {
+    width: 260px;                 /* circle size */
+    aspect-ratio: 1/1;            /* perfect circle ratio */
+    border-radius: 50%;           /* round shape */
+    overflow: hidden;             /* outside photo hide */
+    
+    background-image: url("myphoto.jpg"); /* <-- apni image file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+
+
+/* ===== SERVICES ===== */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #111;
+    padding: 30px;
+    width: 260px;
+    border-radius: 14px;
+    transition: 0.4s;
+    border: 2px solid transparent;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #00d4ff;
+    box-shadow: 0 0 20px rgba(0,212,255,0.4);
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* ===== CONTACT FORM ===== */
+.contact-box {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    padding: 12px;
+    background: #111;
+    border: 2px solid #333;
+    border-radius: 6px;
+    color: #fff;
+    resize: none;
+    transition: 0.3s;
+}
+
+.input-box input:focus,
+.input-box textarea:focus {
+    border-color: #00d4ff;
+}
+
+.send-btn {
+    padding: 12px;
+    border: none;
+    background: #00d4ff;
+    color: #000;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.send-btn:hover {
+    background: #00a2c7;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 25px;
+    }
+
+    .menu {
+        position: absolute;
+        top: 70px;
+        right: -100%;
+        background: #111;
+        width: 200px;
+        flex-direction: column;
+        text-align: right;
+        padding: 20px;
+        transition: 0.3s;
+        border-left: 2px solid #00d4ff;
+    }
+
+    .menu.show {
+        right: 0;
+    }
+
+    .burger {
+        display: flex;
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NextGen Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="nav">
+        <div class="brand">Akash Yadav</div>
+        <ul class="menu" id="menu">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger" id="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I design modern, responsive and interactive digital experiences.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2 class="title">About Me</h2>
+        <p class="sub">Creative • Focused • Passionate</p>
+
+        <div class="about-box">
+            <div class="about-text">
+                <p>I am a dedicated web developer who loves creating beautiful and smooth user experiences. With a passion for modern UI/UX and interactive interfaces, I constantly explore new technologies.</p>
+                <p>My goal is to craft digital products that feel alive, clean, and functional.</p>
+            </div>
+            <div class="about-pic"></div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services">
+        <h2 class="title">What I Do</h2>
+        <p class="sub">Turning ideas into reality</p>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">💻</div>
+                <h3>Web Development</h3>
+                <p>Clean, responsive and modern websites.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📱</div>
+                <h3>App Design</h3>
+                <p>Designing elegant mobile-first interfaces.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🎨</div>
+                <h3>UI/UX</h3>
+                <p>Smooth, interactive and user-focused experience design.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2 class="title">Contact Me</h2>
+        <p class="sub">Let's create something amazing!</p>
+
+        <form class="contact-box" id="form">
+            <div class="input-box">
+                <input type="text" placeholder="Your Name" required />
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="Your Email" required />
+            </div>
+            <div class="input-box">
+                <textarea placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="send-btn">Send</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
