@@ -1,5 +1,8 @@
 # SCT_WD_1
+
 Task 01 – SkillCraft Technology Internship
+
+•Responsive Landing Page
 
 📌 About
 
