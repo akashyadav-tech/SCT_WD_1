@@ -22,6 +22,10 @@ It features a fixed navigation menu that changes style on scroll and hover.
 
 •JavaScript
 
+🚀 How to Run
+
+•Open index.html in any web browser.
+
 🚀 Live Demo: [https://your-project-name.onrender.com](https://next-gen-portfolio.onrender.com)
 
 👨‍💻 Author
