@@ -1,8 +1,8 @@
 # SCT_WD_1
 
-Task 01 – SkillCraft Technology Internship
+•REAPONSIVE LANDING PAGE
 
-•Responsive Landing Page
+Task 01 – SkillCraft Technology Internship
 
 📌 About
 
